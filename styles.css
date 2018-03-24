@@ -1,4 +1,3 @@
-
 * {
 	padding: 0;
 	margin: 0;
@@ -79,7 +78,7 @@ body {
 .icon-display {
 	position: relative;
 	height: 600px;
-	width: 500px;
+	width: 480px;
 	background-color: grey;
 	border-radius: 40px;
 	margin-top: 25%;
@@ -103,7 +102,7 @@ body {
 .stats-display {
 	position: relative;
 	height: 600px;
-	width: 500px;
+	width: 480px;
 	background-color: grey;
 	border-radius: 40px;
 	margin-top: 25%;
@@ -111,6 +110,19 @@ body {
 	border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px inset;
+}
+.hp {
+	margin-top: 25%;
+	line-height: 1.6;
+}
+.atk {
+	line-height: 1.6;
+}
+.def {
+	line-height: 1.6;
+}
+.abilities {
+	line-height: 1.6;
 }
 .nav-buttons {
 	display: inline;
