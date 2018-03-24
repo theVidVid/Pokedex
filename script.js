@@ -4,8 +4,7 @@ $.ajax({
 	url: "https://pokeapi.co/api/v2/pokemon/101",
 	type: 'GET',
 	success: function(electrode) {
-		// console.log(electrode.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"); 
-		console.log(electrode);
+		// console.log(electrode);
 		let name = electrode.name;
 		let type = electrode.types["0"].type.name;
 		let hp = electrode.stats[5].base_stat;
@@ -14,10 +13,11 @@ $.ajax({
 		let statsArray = [name, type, hp, atk, def];
 		let abilities = electrode.abilities["0"].ability.name;
 		let image = electrode.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"
-		// let newDiv = $('<div class="electrode"></div>')
+		let newDiv = $('<div class="electrode"></div>')
 
-		// $('.poke-thrasher').append(newDiv);
-		
+		$('.poke-thrasher').append(newDiv);
+
+
 	}
 
 })
@@ -35,7 +35,10 @@ $.ajax({
 		let statsArray = [name, type, hp, atk, def];
 		let abilities = marowak.abilities["0"].ability.name;
 		let image = marowak.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"
-		// let newDiv = $('<div class="marowak"></div>')
+		let newDiv = $('<div class="marowak"></div>')
+
+		$('.poke-thrasher').append(newDiv);
+
 	}
 })
 
@@ -52,7 +55,9 @@ $.ajax({
 		let statsArray = [name, type, hp, atk, def];
 		let abilities = crobat.abilities["0"].ability.name;
 		let image = crobat.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png"
-		// let newDiv = $('<div class="crobat"></div>')
+		let newDiv = $('<div class="crobat"></div>')
+
+		$('.poke-thrasher').append(newDiv);
 
 	}
 })
