@@ -13,13 +13,11 @@ $.ajax({
 		let statsArray = [name, type, hp, atk, def];
 		let abilities = electrode.abilities["0"].ability.name;
 		let image = electrode.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"
-		let newDiv = $('<div class="electrode"></div>')
-
-		$('.poke-thrasher').append(newDiv);
-
-
+		let newDiv = $('<div class="electrode"></div>');
+		$('.icon').append(newDiv);
+		$(newDiv).append(`<img class="sprites" height="200px" width="200px" src='${image}'>`);
+		
 	}
-
 })
 
 $.ajax({
@@ -35,10 +33,9 @@ $.ajax({
 		let statsArray = [name, type, hp, atk, def];
 		let abilities = marowak.abilities["0"].ability.name;
 		let image = marowak.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"
-		let newDiv = $('<div class="marowak"></div>')
-
-		$('.poke-thrasher').append(newDiv);
-
+		let newDiv = $('<div class="marowak"></div>');
+		$('.icon').append(newDiv);
+		$(newDiv).append(`<img class="sprites" src='${image}'>`);
 	}
 })
 
@@ -56,11 +53,26 @@ $.ajax({
 		let abilities = crobat.abilities["0"].ability.name;
 		let image = crobat.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png"
 		let newDiv = $('<div class="crobat"></div>')
-
-		$('.poke-thrasher').append(newDiv);
-
+		$('.icon').append(newDiv);
+		$(newDiv).append(`<img class="sprites" src='${image}'>`);
 	}
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	// <!-- <div class="Poke-thrasher">
 	// 	<div class="top-display">
