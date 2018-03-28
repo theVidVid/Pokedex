@@ -1,14 +1,13 @@
 //Pokemon object
 class Pokemon {
 	//Creating a blueprint for the pokemon object
-	constructor(name, image, type, hp, atk, def, abilities) {
+	constructor(name, image, hp, atk, def, pokeType, abilities) {
 		this.name = name;
 		this.image = image;
-		// TODO: change name in Ajax call
-		this.type = type;
 		this.hp = hp;
 		this.atk = atk;
 		this.def = def;
+		this.pokeType = pokeType;
 		this.abilities = abilities;
 	}
 }
@@ -32,17 +31,8 @@ class Trainer {
 		}
 	}
 }
-	// get (stats) {
-	// 	for(let i = 0; i < this.pokeTeam.length; i++) {
-	// 		let 
-	// 	}
-	// }
-
-
 let pokeThrasher = new Trainer();
 // //Pokemon ajax call
-
-
 let electrode = () => {
 $.ajax({
 	url: "https://pokeapi.co/api/v2/pokemon/101",
@@ -51,10 +41,10 @@ $.ajax({
 		console.log("success!");
 			let name = pokeData.name;
 			let image = pokeData.sprites.front_default;
-			let type = pokeData.types[0].type.name;
 			let hp = pokeData.stats[5].base_stat;
 			let atk = pokeData.stats[4].base_stat;
 			let def = pokeData.stats[3].base_stat;
+			let pokeType = pokeData.types[0].type.name;
 			let getAbilities = () => {
 				let abilities = []
 				for (let i = 0; i < pokeData.abilities.length; i++) {
@@ -63,7 +53,7 @@ $.ajax({
 				return abilities; 	
 			}
 			let abilitiesList = getAbilities();
-			let pokemon = new Pokemon(name, image, type, hp, atk, def, abilitiesList);	
+			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
 		}
 	});	
@@ -78,10 +68,10 @@ $.ajax({
 		console.log("success!");
 			let name = pokeData.name;
 			let image = pokeData.sprites.front_default;
-			let type = pokeData.types[0].type.name;
 			let hp = pokeData.stats[5].base_stat;
 			let atk = pokeData.stats[4].base_stat;
 			let def = pokeData.stats[3].base_stat;
+			let pokeType = pokeData.types[0].type.name;
 			let getAbilities = () => {
 				let abilities = []
 				for (let i = 0; i < pokeData.abilities.length; i++) {
@@ -90,7 +80,7 @@ $.ajax({
 				return abilities; 	
 			}
 			let abilitiesList = getAbilities();
-			let pokemon = new Pokemon(name, image, type, hp, atk, def, abilitiesList);	
+			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
 		}
 	});	
@@ -105,10 +95,10 @@ $.ajax({
 		console.log("success!");
 			let name = pokeData.name;
 			let image = pokeData.sprites.front_default;
-			let type = pokeData.types[0].type.name;
 			let hp = pokeData.stats[5].base_stat;
 			let atk = pokeData.stats[4].base_stat;
 			let def = pokeData.stats[3].base_stat;
+			let pokeType = pokeData.types[0].type.name;
 			let getAbilities = () => {
 				let abilities = []
 				for (let i = 0; i < pokeData.abilities.length; i++) {
@@ -117,7 +107,7 @@ $.ajax({
 				return abilities; 	
 			}
 			let abilitiesList = getAbilities();
-			let pokemon = new Pokemon(name, image, type, hp, atk, def, abilitiesList);	
+			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
 		}
 	});	
