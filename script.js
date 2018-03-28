@@ -55,13 +55,13 @@ $.ajax({
 			let abilitiesList = getAbilities();
 			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
-			// $(".name").append(pokeData.name);
-			// $(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png');
-			// $(".hp").append(pokeData.stats[5].base_stat);
-			// $(".atk").append(pokeData.stats[4].base_stat);
-			// $(".def").append(pokeData.stats[3].base_stat);
-			// $(".type").append(pokeData.types[0].type.name);
-			// $(".abilities").append(getAbilities(abilities));
+			$(".name").append(pokeData.name);
+			$(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png');
+			$(".hp").append(pokeData.stats[5].base_stat);
+			$(".atk").append(pokeData.stats[4].base_stat);
+			$(".def").append(pokeData.stats[3].base_stat);
+			$(".type").append(pokeData.types[0].type.name);
+			$(".abilities").append(getAbilities(abilities));
 		}
 	});	
 }
@@ -123,13 +123,13 @@ $.ajax({
 			let abilitiesList = getAbilities();
 			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
-			$(".name").append(pokeData.name);
-			$(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png');
-			$(".hp").append(pokeData.stats[5].base_stat);
-			$(".atk").append(pokeData.stats[4].base_stat);
-			$(".def").append(pokeData.stats[3].base_stat);
-			$(".type").append(pokeData.types[0].type.name);
-			$(".abilities").append(getAbilities(abilities));
+			// $(".name").append(pokeData.name);
+			// $(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png');
+			// $(".hp").append(pokeData.stats[5].base_stat);
+			// $(".atk").append(pokeData.stats[4].base_stat);
+			// $(".def").append(pokeData.stats[3].base_stat);
+			// $(".type").append(pokeData.types[0].type.name);
+			// $(".abilities").append(getAbilities(abilities));
 		}
 	});	
 }
@@ -137,49 +137,3 @@ electrode();
 marowak();
 crobat();
 console.log(pokeThrasher);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	// <!-- <div class="Poke-thrasher">
-	// 	<div class="top-display">
-	// 		<button id="blue"></button>
-	// 		<button id="red"></button>
-	// 		<button id="yellow"></button>
-	// 		<button id="green"></button>
-	// 	</div>
-	// 	<div class="icon-display">
-	// 		<div class="pokemon-image">
-	// 		</div>
-	// 	</div>
-	// 	<div class="door">
-	// 		<div class="stats-display">
-	// 			<ul class="stats">
-	// 				<li>Pokemon:</li>
-	// 				<li>HP:</li>
-	// 				<li>ATK:</li>
-	// 				<li>Speed:</li>
-	// 				<li>Special:</li>
-	// 				<li>Total:</li>
-	// 			</ul>
-	// 		</div>
-	// 		<div class="nav-buttons">
-	// 			<button id="left"></button>
-	// 			<button id="right"></button>
-	// 		</div>
-	// 	</div>
-	// </div> -->
-
