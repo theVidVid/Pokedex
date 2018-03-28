@@ -10,22 +10,8 @@ body {
 
 h1 {
   font-family: 'Press Start 2P', cursive;
-  color: #00FF66; }
-
-.electrode {
-  position: relative;
-  height: 500px;
-  width: 400px; }
-
-.marowak {
-  position: relative;
-  height: 500px;
-  width: 400px; }
-
-.crobat {
-  position: relative;
-  height: 400px;
-  width: 400px; }
+  color: #00FF66;
+  font-size: 18px; }
 
 .poke-thrasher {
   position: relative;
@@ -106,8 +92,7 @@ h1 {
   padding: 10px;
   box-shadow: 5px 10px inset; }
 
-.sprites {
-  display: wrap;
+#icon {
   height: 550px;
   width: 480px; }
 

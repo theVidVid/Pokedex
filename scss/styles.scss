@@ -12,21 +12,22 @@ body {
 h1 {
 	font-family: 'Press Start 2P', cursive;
 	color: #00FF66;
+	font-size: 18px;
 }
-.electrode {
-	position: relative;
-	height: 500px;
-	width: 400px;
-}
-.marowak {
-	position: relative;
-	height: 500px;
-	width: 400px;}
-.crobat {
-	position: relative;
-	height: 400px;
-	width: 400px;
-}
+// .electrode {
+// 	position: relative;
+// 	height: 500px;
+// 	width: 400px;
+// }
+// .marowak {
+// 	position: relative;
+// 	height: 500px;
+// 	width: 400px;}
+// .crobat {
+// 	position: relative;
+// 	height: 400px;
+// 	width: 400px;
+// }
 .poke-thrasher {
 	position: relative;
 	display: flex;
@@ -106,8 +107,7 @@ h1 {
     padding: 10px;
     box-shadow: 5px 10px inset;
 }
-.sprites {
-	display: wrap;
+#icon {
 	height: 550px;
 	width: 480px;
 }
