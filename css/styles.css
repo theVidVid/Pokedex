@@ -1,12 +1,7 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
 body {
   background: url(pattern-medium.jpg);
   background-size: cover;
-  font-family: 'Press Start 2P', cursive; }
+  /* font-family: 'Press Start 2P', cursive; */ }
 
 h1 {
   font-family: 'Press Start 2P', cursive;
@@ -45,6 +40,10 @@ h1 {
 .waves-effect.waves-yellow .waves-ripple {
   background-color: #edf047; }
 
+#icon {
+  height: 300px;
+  width: 300px; }
+
 #blue {
   background-color: blue;
   border: solid black 6px;
@@ -59,9 +58,9 @@ h1 {
   border: solid black 4px;
   cursor: pointer;
   background-color: green;
-  height: 24px;
-  width: 24px;
-  border-radius: 12px;
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
   margin-left: 9%;
   margin-top: 10%; }
 
