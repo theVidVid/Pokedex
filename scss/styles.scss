@@ -12,22 +12,8 @@ body {
 h1 {
 	font-family: 'Press Start 2P', cursive;
 	color: #00FF66;
-	font-size: 18px;
+	size: 10px;
 }
-// .electrode {
-// 	position: relative;
-// 	height: 500px;
-// 	width: 400px;
-// }
-// .marowak {
-// 	position: relative;
-// 	height: 500px;
-// 	width: 400px;}
-// .crobat {
-// 	position: relative;
-// 	height: 400px;
-// 	width: 400px;
-// }
 .poke-thrasher {
 	position: relative;
 	display: flex;
@@ -108,11 +94,10 @@ h1 {
     box-shadow: 5px 10px inset;
 }
 #icon {
-	height: 550px;
-	width: 480px;
+	height: 300px;
+	width: 300px;
 }
 .door {
-/*	background-color: darkblue;*/
 	position: relative;
 	display: flex-box;
 	flex-direction: row;
@@ -135,7 +120,9 @@ h1 {
     padding: 10px;
     box-shadow: 5px 8px inset;
 }
-
+.name {
+	margin-top: 25%;
+}
 .hp {
 	margin-top: 25%;
 	line-height: 1.6;
