@@ -1,62 +1,120 @@
+//Pokemon object
+class Pokemon {
+	//Creating a blueprint for the pokemon object
+	constructor(name, image, hp, atk, def, pokeType, abilities) {
+		this.name = name;
+		this.image = image;
+		this.hp = hp;
+		this.atk = atk;
+		this.def = def;
+		this.pokeType = pokeType;
+		this.abilities = abilities;
+	}
+}
+//Trainer object
+class Trainer {
+	constructor() {
+		this.pokeTeam = [];
+	}
+	all () {
+		return this.pokeTeam;
+	}
 
-
+	get (name) {
+		for(let i = 0; i < this.pokeTeam.length; i++) {
+			let pokeName = this.pokeTeam[i].stats.name;
+			if(pokeName === name) {
+				return this.pokeTeam[i];
+			} else {
+				return "You got the wrong Pokemon, try again."
+			}
+		}
+	}
+}
+let pokeThrasher = new Trainer();
+// //Pokemon ajax call
+let electrode = () => {
 $.ajax({
 	url: "https://pokeapi.co/api/v2/pokemon/101",
 	type: 'GET',
-	success: function(electrode) {
-		// console.log(electrode);
-		let name = electrode.name;
-		let type = electrode.types["0"].type.name;
-		let hp = electrode.stats[5].base_stat;
-		let atk = electrode.stats[4].base_stat;
-		let def = electrode.stats[3].base_stat;
-		let statsArray = [name, type, hp, atk, def];
-		let abilities = electrode.abilities["0"].ability.name;
-		let image = electrode.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"
-		let newDiv = $('<div class="electrode"></div>');
-		$('.icon').append(newDiv);
-		$(newDiv).append(`<img class="sprites" height="200px" width="200px" src='${image}'>`);
-		
-	}
-})
+	success: function(pokeData) {
+		console.log("success!");
+			let name = pokeData.name;
+			let image = pokeData.sprites.front_default;
+			let hp = pokeData.stats[5].base_stat;
+			let atk = pokeData.stats[4].base_stat;
+			let def = pokeData.stats[3].base_stat;
+			let pokeType = pokeData.types[0].type.name;
+			let getAbilities = () => {
+				let abilities = []
+				for (let i = 0; i < pokeData.abilities.length; i++) {
+					abilities.push(pokeData.abilities[i].ability.name); 
+				}
+				return abilities; 	
+			}
+			let abilitiesList = getAbilities();
+			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
+			pokeThrasher.pokeTeam.push(pokemon);
+		}
+	});	
+}
 
+//Pokemon ajax call
+let marowak = () => {
 $.ajax({
 	url: "https://pokeapi.co/api/v2/pokemon/105",
 	type: 'GET',
-	success: function(marowak) {
-		// console.log(marowak);
-		let name = marowak.name;
-		let type = marowak.types["0"].type.name;
-		let hp = marowak.stats[5].base_stat;
-		let atk = marowak.stats[4].base_stat;
-		let def = marowak.stats[3].base_stat;
-		let statsArray = [name, type, hp, atk, def];
-		let abilities = marowak.abilities["0"].ability.name;
-		let image = marowak.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"
-		let newDiv = $('<div class="marowak"></div>');
-		$('.icon').append(newDiv);
-		$(newDiv).append(`<img class="sprites" src='${image}'>`);
-	}
-})
+	success: function(pokeData) {
+		console.log("success!");
+			let name = pokeData.name;
+			let image = pokeData.sprites.front_default;
+			let hp = pokeData.stats[5].base_stat;
+			let atk = pokeData.stats[4].base_stat;
+			let def = pokeData.stats[3].base_stat;
+			let pokeType = pokeData.types[0].type.name;
+			let getAbilities = () => {
+				let abilities = []
+				for (let i = 0; i < pokeData.abilities.length; i++) {
+					abilities.push(pokeData.abilities[i].ability.name); 
+				}
+				return abilities; 	
+			}
+			let abilitiesList = getAbilities();
+			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
+			pokeThrasher.pokeTeam.push(pokemon);
+		}
+	});	
+}
 
+//Pokemon ajax call
+let crobat = () => {
 $.ajax({
 	url: "https://pokeapi.co/api/v2/pokemon/169",
 	type: 'GET',
-	success: function(crobat) {
-		// console.log(crobat);
-		let name = crobat.name;
-		let type = crobat.types["0"].type.name;
-		let hp = crobat.stats[5].base_stat;
-		let atk = crobat.stats[4].base_stat;
-		let def = crobat.stats[3].base_stat;
-		let statsArray = [name, type, hp, atk, def];
-		let abilities = crobat.abilities["0"].ability.name;
-		let image = crobat.sprites.front_default.src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png"
-		let newDiv = $('<div class="crobat"></div>')
-		$('.icon').append(newDiv);
-		$(newDiv).append(`<img class="sprites" src='${image}'>`);
-	}
-})
+	success: function(pokeData) {
+		console.log("success!");
+			let name = pokeData.name;
+			let image = pokeData.sprites.front_default;
+			let hp = pokeData.stats[5].base_stat;
+			let atk = pokeData.stats[4].base_stat;
+			let def = pokeData.stats[3].base_stat;
+			let pokeType = pokeData.types[0].type.name;
+			let getAbilities = () => {
+				let abilities = []
+				for (let i = 0; i < pokeData.abilities.length; i++) {
+					abilities.push(pokeData.abilities[i].ability.name); 
+				}
+				return abilities; 	
+			}
+			let abilitiesList = getAbilities();
+			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
+			pokeThrasher.pokeTeam.push(pokemon);
+		}
+	});	
+}
+electrode();
+marowak();
+crobat();
 
 
 

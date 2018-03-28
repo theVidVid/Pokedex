@@ -135,6 +135,7 @@ h1 {
     padding: 10px;
     box-shadow: 5px 8px inset;
 }
+
 .hp {
 	margin-top: 25%;
 	line-height: 1.6;
@@ -145,12 +146,14 @@ h1 {
 .def {
 	line-height: 1.6;
 }
+.type {
+	line-height: 1.6;
+}
 .abilities {
 	line-height: 1.6;
 }
 .nav-buttons {
 	display: inline;
-	float: left;
 }
 #left {
 	border: solid black 4px;
@@ -170,12 +173,6 @@ h1 {
 	border-radius: 12px;
 	margin-left: 5%;
 }
-
-
-
-
-
-
 
 
 
