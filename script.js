@@ -109,12 +109,20 @@ $.ajax({
 			let abilitiesList = getAbilities();
 			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
+			$(".name").append(pokeData.name);
+			$(".image").append(pokeData.sprites.front_default);
+			$(".hp").append(pokeData.stats[5].base_stat);
+			$(".atk").append(pokeData.stats[4].base_stat);
+			$(".def").append(pokeData.stats[3].base_stat);
+			$(".type").append(pokeData.types[0].type.name);
+			$(".abilities").append(getAbilities(abilities));
 		}
 	});	
 }
 electrode();
 marowak();
 crobat();
+console.log(pokeThrasher);
 
 
 
