@@ -112,6 +112,10 @@ $.ajax({
 		}
 	});	
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6d3c426e13a7ebb35a6dbdf3bbb509e672548af3
 electrode();
 marowak();
 crobat();
