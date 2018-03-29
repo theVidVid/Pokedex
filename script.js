@@ -32,6 +32,8 @@ class Trainer {
 	}
 }
 let pokeThrasher = new Trainer();
+
+$()
 // //Pokemon ajax call
 let electrode = () => {
 $.ajax({
@@ -49,19 +51,19 @@ $.ajax({
 				let abilities = []
 				for (let i = 0; i < pokeData.abilities.length; i++) {
 					abilities.push(pokeData.abilities[i].ability.name); 
-				}
+				} 	
 				return abilities; 	
 			}
 			let abilitiesList = getAbilities();
 			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
-			// $("#name").append(pokeData.name);
-			// $(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png');
-			// $(".hp").append(pokeData.stats[5].base_stat);
-			// $(".atk").append(pokeData.stats[4].base_stat);
-			// $(".def").append(pokeData.stats[3].base_stat);
-			// $(".type").append(pokeData.types[0].type.name);
-			// $(".abilities").children('#abilities').append(getAbilities(abilities));
+			$("#name").append(pokeData.name);
+			$(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png');
+			$(".hp").append(pokeData.stats[5].base_stat);
+			$(".atk").append(pokeData.stats[4].base_stat);
+			$(".def").append(pokeData.stats[3].base_stat);
+			$(".type").append(pokeData.types[0].type.name);
+			$(".abilities").children('#abilities').append(getAbilities(abilities));
 		}
 	});	
 }
@@ -123,13 +125,14 @@ $.ajax({
 			let abilitiesList = getAbilities();
 			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
-			$("#name").append(pokeData.name);
-			$(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png');
-			$(".hp").append(pokeData.stats[5].base_stat);
-			$(".atk").append(pokeData.stats[4].base_stat);
-			$(".def").append(pokeData.stats[3].base_stat);
-			$(".type").append(pokeData.types[0].type.name);
-			$(".abilities").children('#abilities').append(getAbilities(abilities));
+			// $("#name").append(pokeData.name);
+			// $(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png');
+			// $(".hp").append(pokeData.stats[5].base_stat);
+			// $(".atk").append(pokeData.stats[4].base_stat);
+			// $(".def").append(pokeData.stats[3].base_stat);
+			// $(".type").append(pokeData.types[0].type.name);
+			// $(".abilities").children('#abilities').append(getAbilities(abilities));
+			// `string text ${expression} string text`
 		}
 	});	
 }

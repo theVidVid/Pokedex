@@ -25,7 +25,6 @@ h1 {
 }
 
 .icon {
-  /*	background-color: darkred;*/
   position: relative;
   display: flex-box;
   flex-direction: row;
@@ -73,8 +72,7 @@ h1 {
   background-color: green;
   height: 36px;
   width: 36px;
-  border-radius: 18px;
-  margin-left: 9%;
+  border-radius: 12px;
   margin-top: 10%;
 }
 
@@ -82,16 +80,6 @@ h1 {
   border: solid black 4px;
   cursor: pointer;
   background-color: yellow;
-  height: 36px;
-  width: 36px;
-  border-radius: 12px;
-  margin-top: 10%;
-}
-
-#red {
-  border: solid black 4px;
-  cursor: pointer;
-  background-color: darkred;
   height: 36px;
   width: 36px;
   border-radius: 12px;
@@ -170,29 +158,5 @@ h1 {
   font-family: 'Press Start 2P', cursive;
   color: #00FF66;
   font-size: 18px;
-}
-
-.nav-buttons {
-  display: inline;
-}
-
-#left {
-  border: solid black 4px;
-  cursor: pointer;
-  background-color: green;
-  height: 24px;
-  width: 24px;
-  border-radius: 12px;
-  margin-left: 5%;
-}
-
-#right {
-  border: solid black 4px;
-  cursor: pointer;
-  background-color: green;
-  height: 24px;
-  width: 24px;
-  border-radius: 12px;
-  margin-left: 5%;
 }
 /*# sourceMappingURL=styles.css.map */
