@@ -1,17 +1,17 @@
 body {
   background: url(/pattern-large.jpg);
   background-size: cover;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 16px;
 }
 
-h1 {
-  font-family: 'Press Start 2P', cursive;
+body h1 {
+  font-family: "Press Start 2P", cursive;
   color: #00FF66;
   size: 20px;
 }
 
-.poke-thrasher {
+body .poke-thrasher {
   position: relative;
   display: flex;
   margin-top: 50px;
@@ -24,7 +24,7 @@ h1 {
   border: solid black 6px;
 }
 
-.icon {
+body .icon {
   position: relative;
   display: flex-box;
   flex-direction: row;
@@ -37,25 +37,16 @@ h1 {
   width: 45%;
 }
 
-.btn-group button {
+body .btn-group button {
   margin-left: 20%;
   float: left;
 }
 
-.waves-effect.waves-yellow .waves-ripple {
+body .btn-group button .waves-effect.waves-yellow .waves-ripple {
   background-color: #edf047;
 }
 
-#name {
-  font-size: 28px;
-}
-
-#icon {
-  height: 550px;
-  width: 480px;
-}
-
-#blue {
+body .btn-group button #blue {
   background-color: blue;
   border: solid black 6px;
   cursor: pointer;
@@ -66,7 +57,7 @@ h1 {
   margin-left: 5%;
 }
 
-#green {
+body .btn-group button #green {
   border: solid black 4px;
   cursor: pointer;
   background-color: green;
@@ -76,7 +67,7 @@ h1 {
   margin-top: 10%;
 }
 
-#yellow {
+body .btn-group button #yellow {
   border: solid black 4px;
   cursor: pointer;
   background-color: yellow;
@@ -86,7 +77,7 @@ h1 {
   margin-top: 10%;
 }
 
-.icon-display {
+body .icon-display {
   position: relative;
   height: 600px;
   width: 480px;
@@ -99,16 +90,17 @@ h1 {
   box-shadow: 5px 10px inset;
 }
 
-#name {
+body .icon-display #name {
   margin-top: 27%;
+  font-size: 28px;
 }
 
-#icon {
+body .icon-display #icon {
   height: 400px;
   width: 450px;
 }
 
-.door {
+body .door {
   position: relative;
   display: flex-box;
   flex-direction: row;
@@ -120,7 +112,7 @@ h1 {
   width: 45%;
 }
 
-.stats-display {
+body .door .stats-display {
   position: relative;
   height: 600px;
   width: 480px;
@@ -133,29 +125,29 @@ h1 {
   box-shadow: 5px 8px inset;
 }
 
-.hp {
+body .door .stats-display .hp {
   margin-top: 25%;
   line-height: 1.6;
 }
 
-.atk {
+body .door .stats-display .atk {
   line-height: 1.6;
 }
 
-.def {
+body .door .stats-display .def {
   line-height: 1.6;
 }
 
-.type {
+body .door .stats-display .type {
   line-height: 1.6;
 }
 
-.abilities {
+body .door .stats-display .abilities {
   line-height: 1.6;
 }
 
-#abilities {
-  font-family: 'Press Start 2P', cursive;
+body .door .stats-display #abilities {
+  font-family: "Press Start 2P", cursive;
   color: #00FF66;
   font-size: 18px;
 }
