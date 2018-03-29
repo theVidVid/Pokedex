@@ -1,3 +1,8 @@
+//function to return an array
+let getPokemon = (pokemon) => {
+	return Object.keys(pokeData);
+}
+
 //Pokemon object
 class Pokemon {
 	//Creating a blueprint for the pokemon object
@@ -33,8 +38,7 @@ class Trainer {
 }
 let pokeThrasher = new Trainer();
 
-$()
-// //Pokemon ajax call
+//Pokemon ajax call
 let electrode = () => {
 $.ajax({
 	url: "https://pokeapi.co/api/v2/pokemon/101",
@@ -50,10 +54,10 @@ $.ajax({
 			let getAbilities = () => {
 				let abilities = []
 				for (let i = 0; i < pokeData.abilities.length; i++) {
-					abilities.push(pokeData.abilities[i].ability.name); 
-				} 	
+					abilities.push(pokeData.abilities[i].ability.name);  	
+				}	
 				return abilities; 	
-			}
+			} 		
 			let abilitiesList = getAbilities();
 			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
@@ -64,6 +68,9 @@ $.ajax({
 			$(".def").append(pokeData.stats[3].base_stat);
 			$(".type").append(pokeData.types[0].type.name);
 			$(".abilities").children('#abilities').append(getAbilities(abilities));
+				for (i = 0; i < getPokemon.length; i++) {
+
+				}
 		}
 	});	
 }
@@ -132,7 +139,7 @@ $.ajax({
 			// $(".def").append(pokeData.stats[3].base_stat);
 			// $(".type").append(pokeData.types[0].type.name);
 			// $(".abilities").children('#abilities').append(getAbilities(abilities));
-			// `string text ${expression} string text`
+
 		}
 	});	
 }
@@ -141,4 +148,7 @@ marowak();
 crobat();
 console.log(pokeThrasher);
 
+getPokemon(electrode);
+// getPokemon(marowak);
+// getPokemon(crobat);
 

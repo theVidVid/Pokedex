@@ -15,7 +15,7 @@ body {
 	background-size: cover;
 	font-family: $font-stack;
 	font-size: 16px;
-
+}
 h1 {
 	font-family: $font-stack;
 	color: $fontColor;
@@ -48,10 +48,8 @@ h1 {
 .btn-group button {
 	margin-left: 20%;
 	float: left;
-	.waves-effect.waves-yellow .waves-ripple {
-		background-color: $buttonEffects;
-	}
-	#blue {
+}
+#blue {
 		background-color: $blueButton;
 		border: solid $borderColor 6px;
 		cursor: pointer;
@@ -60,27 +58,30 @@ h1 {
 		border-radius: 50px;
 		margin-top: 2%;
 		margin-left: 5%;
+		.waves-effect.waves-yellow .waves-ripple {
+			background-color: $buttonEffects;
+		}
 	}
-	#green {
-		border: solid $borderColor 4px;
-		cursor: pointer;
-		background-color: $greenButton;
-		height: 36px;
-		width: 36px;
-		border-radius: 12px;
-		margin-top: 10%
-	}
-	#yellow {
-		border: solid $borderColor 4px;
-		cursor: pointer;
-		background-color: $yellowButton;
-		height: 36px;
-		width: 36px;
-		border-radius: 12px;
-		margin-top: 10%
-	}
+		#green {
+			border: solid $borderColor 4px;
+			cursor: pointer;
+			background-color: $greenButton;
+			height: 36px;
+			width: 36px;
+			border-radius: 12px;
+			margin-top: 10%
+		}
+		#yellow {
+			border: solid $borderColor 4px;
+			cursor: pointer;
+			background-color: $yellowButton;
+			height: 36px;
+			width: 36px;
+			border-radius: 12px;
+			margin-top: 10%
+		}
+	
 
-}
 
 .icon-display {
 	position: relative;
@@ -149,4 +150,4 @@ h1 {
 
 
 
-}
+
