@@ -1,6 +1,6 @@
 //function to return an array
-let getPokemon = (pokemon) => {
-	return Object.keys(pokeData);
+let getPokemonStats = (obj) => {
+	return Object.entries(obj);
 }
 
 //Pokemon object
@@ -68,8 +68,12 @@ $.ajax({
 			$(".def").append(pokeData.stats[3].base_stat);
 			$(".type").append(pokeData.types[0].type.name);
 			$(".abilities").children('#abilities').append(getAbilities(abilities));
-				for (i = 0; i < getPokemon.length; i++) {
-
+				let pokemonStats = getPokemonStats(pokemon);
+				for (i = 0; i < pokemonStats.length; i++) {
+					// console.log(pokemonStats[i]);
+					// console.log(pokemonStats[i].name,1)
+					// console.log(pokemonStats[i].hp[1].atk[1].def[1]);
+					// console.log(pokemonStats[i].abilities[1].length);	
 				}
 		}
 	});	
@@ -98,13 +102,17 @@ $.ajax({
 			let abilitiesList = getAbilities();
 			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
-			// $("#name").append(pokeData.name);
-			// $(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png');
-			// $(".hp").append(pokeData.stats[5].base_stat);
-			// $(".atk").append(pokeData.stats[4].base_stat);
-			// $(".def").append(pokeData.stats[3].base_stat);
-			// $(".type").append(pokeData.types[0].type.name);
-			// $(".abilities").children('#abilities').append(getAbilities(abilities));
+			$("#name").append(pokeData.name);
+			$(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png');
+			$(".hp").append(pokeData.stats[5].base_stat);
+			$(".atk").append(pokeData.stats[4].base_stat);
+			$(".def").append(pokeData.stats[3].base_stat);
+			$(".type").append(pokeData.types[0].type.name);
+			$(".abilities").children('#abilities').append(getAbilities(abilities));
+				let pokemonStats = getPokemonStats(pokemon);
+				for (i = 0; i < pokemonStats.length; i++) {
+			// 	console.log(pokemonStats[i]);
+				}
 		}
 	});	
 }
@@ -132,23 +140,26 @@ $.ajax({
 			let abilitiesList = getAbilities();
 			let pokemon = new Pokemon(name, image, hp, atk, def, pokeType, abilitiesList);	
 			pokeThrasher.pokeTeam.push(pokemon);
-			// $("#name").append(pokeData.name);
-			// $(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png');
-			// $(".hp").append(pokeData.stats[5].base_stat);
-			// $(".atk").append(pokeData.stats[4].base_stat);
-			// $(".def").append(pokeData.stats[3].base_stat);
-			// $(".type").append(pokeData.types[0].type.name);
-			// $(".abilities").children('#abilities').append(getAbilities(abilities));
-
+			$("#name").append(pokeData.name);
+			$(".icon-display").children('img').attr('src','https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png');
+			$(".hp").append(pokeData.stats[5].base_stat);
+			$(".atk").append(pokeData.stats[4].base_stat);
+			$(".def").append(pokeData.stats[3].base_stat);
+			$(".type").append(pokeData.types[0].type.name);
+			$(".abilities").children('#abilities').append(getAbilities(abilities));
+				let pokemonStats = getPokemonStats(pokemon);
+				for (i = 0; i < pokemonStats.length; i++) {
+				// 	console.log(pokemonStats[i]);
+				}
 		}
 	});	
 }
+
 electrode();
 marowak();
 crobat();
 console.log(pokeThrasher);
 
-getPokemon(electrode);
-// getPokemon(marowak);
-// getPokemon(crobat);
+// getPokemon();
+
 
