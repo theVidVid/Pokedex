@@ -62,26 +62,32 @@ h1 {
 			background-color: $buttonEffects;
 		}
 	}
-		#green {
-			border: solid $borderColor 4px;
-			cursor: pointer;
-			background-color: $greenButton;
-			height: 36px;
-			width: 36px;
-			border-radius: 12px;
-			margin-top: 10%
+#green {
+		background-color: $greenButton;
+		border: solid $borderColor 4px;
+		cursor: pointer;
+		height: 100px;
+		width: 100px;
+		border-radius: 50px;
+		margin-top: 2%;
+		margin-left: 5%;
+		.waves-effect.waves-yellow .waves-ripple {
+			background-color: $buttonEffects;
 		}
-		#yellow {
-			border: solid $borderColor 4px;
-			cursor: pointer;
-			background-color: $yellowButton;
-			height: 36px;
-			width: 36px;
-			border-radius: 12px;
-			margin-top: 10%
+	}
+#yellow {
+		background-color: $yellowButton;
+		border: solid $borderColor 4px;
+		cursor: pointer;
+		height: 100px;
+		width: 100px;
+		border-radius: 50px;
+		margin-top: 2%;
+		margin-left: 5%;
+		.waves-effect.waves-yellow .waves-ripple {
+			background-color: $buttonEffects;
 		}
-	
-
+	}
 
 .icon-display {
 	position: relative;

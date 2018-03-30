@@ -58,23 +58,33 @@ h1 {
 }
 
 #green {
+  background-color: green;
   border: solid black 4px;
   cursor: pointer;
-  background-color: green;
-  height: 36px;
-  width: 36px;
-  border-radius: 12px;
-  margin-top: 10%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+#green .waves-effect.waves-yellow .waves-ripple {
+  background-color: #edf047;
 }
 
 #yellow {
+  background-color: yellow;
   border: solid black 4px;
   cursor: pointer;
-  background-color: yellow;
-  height: 36px;
-  width: 36px;
-  border-radius: 12px;
-  margin-top: 10%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+#yellow .waves-effect.waves-yellow .waves-ripple {
+  background-color: #edf047;
 }
 
 .icon-display {
