@@ -146,8 +146,3 @@ $( "#yellow" ).click(function() {
 electrode();
 marowak();
 crobat();
-
-
-
-
-

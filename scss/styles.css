@@ -53,10 +53,6 @@ h1 {
   margin-left: 5%;
 }
 
-#blue .waves-effect.waves-yellow .waves-ripple {
-  background-color: #edf047;
-}
-
 #green {
   background-color: green;
   border: solid black 6px;
@@ -68,10 +64,6 @@ h1 {
   margin-left: 5%;
 }
 
-#green .waves-effect.waves-yellow .waves-ripple {
-  background-color: #edf047;
-}
-
 #yellow {
   background-color: yellow;
   border: solid black 6px;
@@ -81,10 +73,6 @@ h1 {
   border-radius: 50px;
   margin-top: 2%;
   margin-left: 5%;
-}
-
-#yellow .waves-effect.waves-yellow .waves-ripple {
-  background-color: #edf047;
 }
 
 .icon-display {
