@@ -59,7 +59,7 @@ h1 {
 
 #green {
   background-color: green;
-  border: solid black 4px;
+  border: solid black 6px;
   cursor: pointer;
   height: 100px;
   width: 100px;
@@ -74,7 +74,7 @@ h1 {
 
 #yellow {
   background-color: yellow;
-  border: solid black 4px;
+  border: solid black 6px;
   cursor: pointer;
   height: 100px;
   width: 100px;
@@ -101,12 +101,13 @@ h1 {
 }
 
 .icon-display #name {
-  margin-top: 27%;
+  margin-top: 20%;
   font-size: 28px;
+  line-height: 1.8;
 }
 
 .icon-display #icon {
-  height: 400px;
+  height: 450px;
   width: 450px;
 }
 
@@ -136,7 +137,7 @@ h1 {
 }
 
 .door .stats-display .hp {
-  margin-top: 25%;
+  margin-top: 20%;
   line-height: 1.6;
 }
 
@@ -159,6 +160,6 @@ h1 {
 .door .stats-display #abilities {
   font-family: "Press Start 2P", cursive;
   color: #00FF66;
-  font-size: 18px;
+  font-size: 28px;
 }
 /*# sourceMappingURL=styles.css.map */
